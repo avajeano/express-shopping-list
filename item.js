@@ -1,6 +1,7 @@
 // ITEM IN A SHOPPING CART
 
 const items = require("./fakeDb")
+const ExpressError = require("./expressError");
 
 class Item {
     constructor(name, price){

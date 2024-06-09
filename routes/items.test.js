@@ -31,10 +31,10 @@ describe("GET /items/:name", function(){
         expect(res.body.item).toEqual(item);
     });
 
-    // test("404 error handlinng", async function(){
-    //     const res = await request(app).get("/items/candy");
-    //     expect(res.statusCode).toBe(404);
-    // });
+    test("404 error handlinng", async function(){
+        const res = await request(app).get("/items/candy");
+        expect(res.statusCode).toBe(404);
+    });
 });
 
 describe("POST /items", function() {
